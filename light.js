@@ -433,7 +433,7 @@ function init_ui() {
 
 function init_sphere(d) {
     var center = origin;
-    var radius = 150;
+    var radius = 220;
     var density = 4 * d; // quadrants * (points / quadrant)
     var rotation_axis = original_axis;
     
