@@ -1,0 +1,36 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+#content {
+    margin:10px;
+    border:1px solid black;
+    display:inline-flex;
+}
+
+#map {
+    float:right;
+    border-left:1px solid black;
+}
+
+#controls {
+    margin:10px 30px;
+}
+
+#keys-form {
+    margin:10px;
+}
+
+#keys-form .row {
+    margin:10px 0;
+}
+
+#keys-form .row .cell {
+    display:inline-block;
+    margin-right:1px;
+}
+
+#keys-form .row .cell input {
+    width:50px;
+}
