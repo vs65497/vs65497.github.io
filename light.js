@@ -997,7 +997,28 @@ function draw_map(goto)
     ctx2.stroke();
 }
 
+function top_secret() {
+    const queryParams = new URLSearchParams(window.location.search);
+    const params = {};
+
+    for (const [key, value] of queryParams.entries()) {
+        params[key] = value;
+    }
+
+    console.log(params);
+    
+    if(params.secret === 'joel') {
+        var body = document.querySelector('body');
+        body.classList.remove('hideme');
+        return true;
+    }
+
+    return false;
+}
+
 window.onload = function() {
-    main();
-    Sound.prototype.main();
+    if(top_secret()) {    
+        main();
+        Sound.prototype.main();
+    }
 }

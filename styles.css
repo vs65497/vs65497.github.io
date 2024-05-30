@@ -3,6 +3,10 @@
     padding:0;
 }
 
+.hideme {
+    display:none;
+}
+
 #content {
     margin:10px;
     border:1px solid black;
